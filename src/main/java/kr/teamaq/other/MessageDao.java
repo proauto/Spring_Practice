@@ -1,9 +1,11 @@
-package kr.teamaq.user;
+package kr.teamaq.other;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+import kr.teamaq.user.User;
 
 public class MessageDao {
 

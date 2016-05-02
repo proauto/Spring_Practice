@@ -1,4 +1,4 @@
-package kr.teamaq.user;
+package kr.teamaq.other;
 
 import javax.sql.DataSource;
 
@@ -6,13 +6,15 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
+import kr.teamaq.user.UserDaoJdbc;
+
 @Configuration
 public class DaoFactory {
 
 	@Bean
-	public UserDao userDao() {
+	public UserDaoJdbc userDao() {
 
-		UserDao userDao = new UserDao();
+		UserDaoJdbc userDao = new UserDaoJdbc();
 		userDao.setDataSource(dataSource());
 		return userDao;
 	}

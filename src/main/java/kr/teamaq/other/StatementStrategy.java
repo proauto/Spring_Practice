@@ -1,4 +1,4 @@
-package kr.teamaq.user;
+package kr.teamaq.other;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
