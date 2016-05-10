@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
-import kr.teamaq.user.UserDaoJdbc;
+import kr.teamaq.user.dao.UserDaoJdbc;
 
 @Configuration
 public class DaoFactory {

@@ -11,6 +11,7 @@ public class User {
 	String id;
 	String name;
 	String password;
+	String email;
 
 	// 자바빈의 규약을 따르는 클래스에 생성자를 명시적으로 추가했을 때는 파라미터가 없는 디폴트 생성자도
 	// 함께 정의해주는 것을 잊지 말자
@@ -18,13 +19,14 @@ public class User {
 
 	}
 
-	public User(String id, String name, String password,Level level, int login, int recommend) {
+	public User(String id, String name, String password,Level level, int login, int recommend,String email) {
 		this.id = id;
 		this.name = name;
 		this.password = password;
 		this.level = level;
 		this.login = login;
 		this.recommend = recommend;
+		this.email = email;
 	}
 
 	public String getId() {
@@ -75,6 +77,16 @@ public class User {
 		this.recommend = recommend;
 	}
 	
+	
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	public void upgradeLevel(){
 		Level nextLevel = this.level.nextLevel();
 		if(nextLevel == null){

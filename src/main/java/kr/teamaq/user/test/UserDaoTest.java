@@ -17,8 +17,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import kr.teamaq.user.User;
-import kr.teamaq.user.UserDaoJdbc;
 import kr.teamaq.user.Interface.Level;
+import kr.teamaq.user.dao.UserDaoJdbc;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "test-applicationContext.xml")
@@ -34,9 +34,9 @@ public class UserDaoTest {
 	@Before
 	public void setUp() {
 
-		this.user1 = new User("11", "11", "11",Level.BASIC,1,0);
-		this.user2 = new User("22", "22", "22",Level.SILVER,55,10);
-		this.user3 = new User("33", "33", "33",Level.GOLD,100,40);
+		this.user1 = new User("11", "11", "11",Level.BASIC,1,0,"hg1771@naver.com");
+		this.user2 = new User("22", "22", "22",Level.SILVER,55,10,"hg1286@naver.com");
+		this.user3 = new User("33", "33", "33",Level.GOLD,100,40,"aq1771@naver.com");
 
 	}
 
